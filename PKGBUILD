@@ -3,9 +3,9 @@
 # Arch Contributor: Allan McRae <allan@archlinux.org>
 # Arch Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
-pkgname=sudo
+pkgname=bsudo
 _sudover=1.9.9
-pkgrel=3
+pkgrel=4
 pkgver=${_sudover/p/.p}
 pkgdesc="Give certain users the ability to run some commands as root"
 arch=('x86_64')
@@ -13,29 +13,33 @@ url="https://www.sudo.ws/sudo/"
 license=('custom')
 groups=('base-devel')
 depends=('glibc' 'openssl' 'pam' 'libldap' 'zlib')
+conflicts=('sudo')
 backup=('etc/pam.d/sudo'
         'etc/sudo.conf'
         'etc/sudo_logsrvd.conf'
         'etc/sudoers')
 install=$pkgname.install
-source=(https://www.sudo.ws/sudo/dist/$pkgname-$_sudover.tar.gz{,.sig}
+source=(https://www.sudo.ws/sudo/dist/sudo-$_sudover.tar.gz{,.sig}
         sudo_logsrvd.service
         disable-non-interative-auth.patch
+        mkbsudo.patch
         sudo.pam)
 sha256sums=('6d6ee863a3bc26c87661093a74ec63e10fd031ceba714642d21636dfe25e3e00'
             'SKIP'
-            '8b91733b73171827c360a3e01f4692772b78e62ceca0cf0fd4b770aba35081a1'
+            '42801e622daf9878c20bd3e45090d42ffe4ade65a06e092c35219aaf696910c9'
             '094387d71f6866ff85ab1cccbdf685f97c02a803eb01b41c80c52918785db85c'
-            'd1738818070684a5d2c9b26224906aad69a4fea77aabd960fc2675aee2df1fa2')
+            '4a4baddb5d75a1cb5b53aaf249aace79428e8e267555aeb6d400cf86858dacd9'
+            'ad3dbd687bb3ec0849ff91cd774fbeec21f9c4e6d1334de34d0f84a8519966e5')
 validpgpkeys=('59D1E9CCBA2B376704FDD35BA9F4C021CEA470FB')
 
 prepare() {
-  cd "$srcdir/$pkgname-$_sudover"
+  cd "$srcdir/sudo-$_sudover"
+  patch -Np1 -i ../mkbsudo.patch
   patch -Np1 -i ../disable-non-interative-auth.patch
 }
 
 build() {
-  cd "$srcdir/$pkgname-$_sudover"
+  cd "$srcdir/sudo-$_sudover"
 
   ./configure \
     --prefix=/usr \
@@ -50,18 +54,18 @@ build() {
     --with-ldap \
     --with-ldap-conf-file=/etc/openldap/ldap.conf \
     --with-env-editor \
-    --with-passprompt="[sudo] password for %p: " \
+    --with-passprompt="[bitches] password for %p: " \
     --with-all-insults
   make
 }
 
 check() {
-  cd "$srcdir/$pkgname-$_sudover"
+  cd "$srcdir/sudo-$_sudover"
   make check
 }
 
 package() {
-  cd "$srcdir/$pkgname-$_sudover"
+  cd "$srcdir/sudo-$_sudover"
   make DESTDIR="$pkgdir" install
 
   # sudo_logsrvd service file (taken from sudo-logsrvd-1.9.0-1.el8.x86_64.rpm)
@@ -76,7 +80,7 @@ package() {
 
   install -Dm644 "$srcdir/sudo.pam" "$pkgdir/etc/pam.d/sudo"
 
-  install -Dm644 LICENSE.md -t "$pkgdir/usr/share/licenses/sudo"
+  install -Dm644 LICENSE.md -t "$pkgdir/usr/share/licenses/bsudo"
 
   echo "Defaults    insults" >> "$pkgdir/etc/sudoers"
 }

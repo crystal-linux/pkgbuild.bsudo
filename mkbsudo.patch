@@ -1,0 +1,1523 @@
+diff --color -ur sudo-1.9.9/ChangeLog bsudo-1.9.9/ChangeLog
+--- sudo-1.9.9/ChangeLog	2022-01-27 16:26:57.000000000 -0500
++++ bsudo-1.9.9/ChangeLog	2022-02-06 00:18:55.093505427 -0500
+@@ -50083,7 +50083,7 @@
+ 
+ 	* ldap.c:
+ 	Do a sub tree search instead of a base search (one level in the tree
+-	only) for sudo right objects. This allows system administrators to
++	only) for sudo right objects. This allows system Booty Bitchs to
+ 	categorize the rights in a tree to make them easier to manage.
+ 	[6d2d9abf996e]
+ 
+diff --color -ur sudo-1.9.9/docs/sudo.conf.man.in bsudo-1.9.9/docs/sudo.conf.man.in
+--- sudo-1.9.9/docs/sudo.conf.man.in	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/docs/sudo.conf.man.in	2022-02-06 00:18:55.090172092 -0500
+@@ -461,7 +461,7 @@
+ .sp
+ The
+ \fIgroup_source\fR
+-setting allows the administrator to change this default behavior.
++setting allows the Booty Bitch to change this default behavior.
+ Supported values for
+ \fIgroup_source\fR
+ are:
+diff --color -ur sudo-1.9.9/docs/sudo.conf.mdoc.in bsudo-1.9.9/docs/sudo.conf.mdoc.in
+--- sudo-1.9.9/docs/sudo.conf.mdoc.in	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/docs/sudo.conf.mdoc.in	2022-02-06 00:18:55.090172092 -0500
+@@ -422,7 +422,7 @@
+ .Pp
+ The
+ .Em group_source
+-setting allows the administrator to change this default behavior.
++setting allows the Booty Bitch to change this default behavior.
+ Supported values for
+ .Em group_source
+ are:
+diff --color -ur sudo-1.9.9/docs/sudoers.man.in bsudo-1.9.9/docs/sudoers.man.in
+--- sudo-1.9.9/docs/sudoers.man.in	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/docs/sudoers.man.in	2022-02-06 00:18:55.090172092 -0500
+@@ -4967,7 +4967,7 @@
+ environment variable.
+ This option can be used to reset the
+ \fRPATH\fR
+-to a known good value that contains directories for system administrator
++to a known good value that contains directories for system Booty Bitch
+ commands such as
+ \fI/usr/sbin\fR.
+ .sp
+@@ -5465,7 +5465,7 @@
+ If an error occurs,
+ \fBsudoers\fR
+ will log a message and, in most cases, send a message to the
+-administrator via email.
++Booty Bitch via email.
+ Possible errors include:
+ .TP 3n
+ parse error in @sysconfdir@/sudoers near line N
+diff --color -ur sudo-1.9.9/docs/sudoers.mdoc.in bsudo-1.9.9/docs/sudoers.mdoc.in
+--- sudo-1.9.9/docs/sudoers.mdoc.in	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/docs/sudoers.mdoc.in	2022-02-06 00:18:55.090172092 -0500
+@@ -4636,7 +4636,7 @@
+ environment variable.
+ This option can be used to reset the
+ .Ev PATH
+-to a known good value that contains directories for system administrator
++to a known good value that contains directories for system Booty Bitch
+ commands such as
+ .Pa /usr/sbin .
+ .Pp
+@@ -5091,7 +5091,7 @@
+ If an error occurs,
+ .Nm
+ will log a message and, in most cases, send a message to the
+-administrator via email.
++Booty Bitch via email.
+ Possible errors include:
+ .Bl -tag -width 4
+ .It parse error in @sysconfdir@/sudoers near line N
+diff --color -ur sudo-1.9.9/docs/sudo.man.in bsudo-1.9.9/docs/sudo.man.in
+--- sudo-1.9.9/docs/sudo.man.in	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/docs/sudo.man.in	2022-02-06 00:18:55.090172092 -0500
+@@ -226,7 +226,7 @@
+ \fItype\fR
+ when validating the user, if allowed by
+ \fI/etc/login.conf\fR.
+-The system administrator may specify a list of sudo-specific
++The system Booty Bitch may specify a list of sudo-specific
+ authentication methods by adding an
+ \(lqauth-sudo\(rq
+ entry in
+@@ -262,7 +262,7 @@
+ \fIsudoers\fR
+ policy only permits use of the
+ \fB\-C\fR
+-option when the administrator has enabled the
++option when the Booty Bitch has enabled the
+ \fIclosefrom_override\fR
+ option.
+ .if \n(LC \{\
+diff --color -ur sudo-1.9.9/docs/sudo.mdoc.in bsudo-1.9.9/docs/sudo.mdoc.in
+--- sudo-1.9.9/docs/sudo.mdoc.in	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/docs/sudo.mdoc.in	2022-02-06 00:18:55.090172092 -0500
+@@ -224,7 +224,7 @@
+ .Ar type
+ when validating the user, if allowed by
+ .Pa /etc/login.conf .
+-The system administrator may specify a list of sudo-specific
++The system Booty Bitch may specify a list of sudo-specific
+ authentication methods by adding an
+ .Dq auth-sudo
+ entry in
+@@ -257,7 +257,7 @@
+ .Em sudoers
+ policy only permits use of the
+ .Fl C
+-option when the administrator has enabled the
++option when the Booty Bitch has enabled the
+ .Em closefrom_override
+ option.
+ .if \n(LC \{\
+diff --color -ur sudo-1.9.9/docs/sudo_plugin.man.in bsudo-1.9.9/docs/sudo_plugin.man.in
+--- sudo-1.9.9/docs/sudo_plugin.man.in	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/docs/sudo_plugin.man.in	2022-02-06 00:18:55.090172092 -0500
+@@ -1061,7 +1061,7 @@
+ command behave this way.
+ Because of this, a plugin should not set
+ \fIexec_background\fR
+-unless it is explicitly enabled by the administrator and there should
++unless it is explicitly enabled by the Booty Bitch and there should
+ be a way to enabled or disable it on a per-command basis.
+ .sp
+ This setting has no effect unless I/O logging is enabled or
+diff --color -ur sudo-1.9.9/docs/sudo_plugin.mdoc.in bsudo-1.9.9/docs/sudo_plugin.mdoc.in
+--- sudo-1.9.9/docs/sudo_plugin.mdoc.in	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/docs/sudo_plugin.mdoc.in	2022-02-06 00:18:55.090172092 -0500
+@@ -950,7 +950,7 @@
+ command behave this way.
+ Because of this, a plugin should not set
+ .Em exec_background
+-unless it is explicitly enabled by the administrator and there should
++unless it is explicitly enabled by the Booty Bitch and there should
+ be a way to enabled or disable it on a per-command basis.
+ .Pp
+ This setting has no effect unless I/O logging is enabled or
+diff --color -ur sudo-1.9.9/docs/TROUBLESHOOTING.md bsudo-1.9.9/docs/TROUBLESHOOTING.md
+--- sudo-1.9.9/docs/TROUBLESHOOTING.md	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/docs/TROUBLESHOOTING.md	2022-02-06 00:18:55.090172092 -0500
+@@ -73,7 +73,7 @@
+ > If you get the following error from sudo:
+ 
+     Account expired or PAM config lacks an 'account' section for sudo,
+-    contact your system administrator`
++    contact your system Booty Bitch`
+ 
+ > when the account has not expired, your PAM config probably lacks
+ > an 'account' specification.  On Linux this usually means you are
+diff --color -ur sudo-1.9.9/plugins/sudoers/auth/API bsudo-1.9.9/plugins/sudoers/auth/API
+--- sudo-1.9.9/plugins/sudoers/auth/API	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/auth/API	2022-02-06 00:18:55.090172092 -0500
+@@ -59,7 +59,7 @@
+ 
+     AUTH_FATAL		A fatal error occurred.  The routine should have
+ 			written an error message to stderr and optionally
+-			sent mail to the administrator.
++			sent mail to the Booty Bitch.
+ 			When verify_user() gets AUTH_FATAL from an auth
+ 			function it does an exit(1).
+ 
+diff --color -ur sudo-1.9.9/plugins/sudoers/auth/pam.c bsudo-1.9.9/plugins/sudoers/auth/pam.c
+--- sudo-1.9.9/plugins/sudoers/auth/pam.c	2022-01-27 16:24:25.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/auth/pam.c	2022-02-06 00:18:55.090172092 -0500
+@@ -381,13 +381,13 @@
+ 		}
+ 		/* Password expired, cannot be updated by user. */
+ 		log_warningx(0,
+-		    N_("Password expired, contact your system administrator"));
++		    N_("Password expired, contact your system Booty Bitch"));
+ 		status = AUTH_FATAL;
+ 		break;
+ 	    case PAM_ACCT_EXPIRED:
+ 		log_warningx(0,
+ 		    N_("Account expired or PAM config lacks an \"account\" "
+-		    "section for sudo, contact your system administrator"));
++		    "section for sudo, contact your system Booty Bitch"));
+ 		status = AUTH_FATAL;
+ 		break;
+ 	    case PAM_AUTHINFO_UNAVAIL:
+diff --color -ur sudo-1.9.9/plugins/sudoers/check.c bsudo-1.9.9/plugins/sudoers/check.c
+--- sudo-1.9.9/plugins/sudoers/check.c	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/check.c	2022-02-06 00:18:55.023505428 -0500
+@@ -274,11 +274,11 @@
+     /* Default sudo lecture. */
+     msg.msg_type = SUDO_CONV_ERROR_MSG|SUDO_CONV_PREFER_TTY;
+     msg.msg = _("\n"
+-	"We trust you have received the usual lecture from the local System\n"
+-	"Administrator. It usually boils down to these three things:\n\n"
+-	"    #1) Respect the privacy of others.\n"
+-	"    #2) Think before you type.\n"
+-	"    #3) With great power comes great responsibility.\n\n");
++	"We trust you have received the usual lecture from the local Big\n"
++	"Booty Bitch. It usually boils down to these three things:\n\n"
++	"    #1) Fuck bitches, get money.\n"
++	"    #2) Think before you open that bitchass mouth.\n"
++	"    #3) With great power comes big booty bitches.\n\n");
+     sudo_conv(1, &msg, &repl, NULL);
+     debug_return_bool(true);
+ }
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/ast.po bsudo-1.9.9/plugins/sudoers/po/ast.po
+--- sudo-1.9.9/plugins/sudoers/po/ast.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/ast.po	2022-02-06 00:18:55.090172092 -0500
+@@ -381,11 +381,11 @@
+ msgstr "nun pue camudase la contraseña caducada: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:348
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Caducó la contraseña, contauta col alministrador de sistemes"
+ 
+ #: plugins/sudoers/auth/pam.c:353
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "La cuenta caducó o a la configuración de PAM fálta-y la seición «account» pa sudo, contauta col alministrador de sistemes"
+ 
+ #: plugins/sudoers/auth/pam.c:361 plugins/sudoers/auth/pam.c:367
+@@ -469,12 +469,12 @@
+ #: plugins/sudoers/check.c:269
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ 
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/ca.po bsudo-1.9.9/plugins/sudoers/po/ca.po
+--- sudo-1.9.9/plugins/sudoers/po/ca.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/ca.po	2022-02-06 00:18:55.090172092 -0500
+@@ -1074,11 +1074,11 @@
+ msgstr "no s'ha pogut canviar la contrasenya expirada: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:384
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Ha expirat la contrasenya, contacteu el vostre administrador de sistema"
+ 
+ #: plugins/sudoers/auth/pam.c:389
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Ha expirat el compte o la configuració PAM no té una secció \"compte\" per a sudo, contacteu el vostre administrador de sistema"
+ 
+ #: plugins/sudoers/auth/pam.c:397 plugins/sudoers/auth/pam.c:402
+@@ -1182,12 +1182,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/cs.po bsudo-1.9.9/plugins/sudoers/po/cs.po
+--- sudo-1.9.9/plugins/sudoers/po/cs.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/cs.po	2022-02-06 00:18:55.023505428 -0500
+@@ -1463,11 +1463,11 @@
+ msgstr "prošlé heslo nelze změnit: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Heslu vypršela platnost, kontaktujte správce svého systému"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Účtu vypršela platnost nebo v konfiguraci PAM pro sudo chybí sekce „account“. Kontaktujte správce svého systému"
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+@@ -1561,12 +1561,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/da.po bsudo-1.9.9/plugins/sudoers/po/da.po
+--- sudo-1.9.9/plugins/sudoers/po/da.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/da.po	2022-02-06 00:18:55.086838760 -0500
+@@ -389,12 +389,12 @@
+ msgstr "kan ikke ændre udløbet adgangskode: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:241
+-msgid "Password expired, contact your system administrator"
+-msgstr "Adgangskode udløbet, kontakt din systemadministrator"
++msgid "Password expired, contact your system Booty Bitch"
++msgstr "Adgangskode udløbet, kontakt din systemBooty Bitch"
+ 
+ #: plugins/sudoers/auth/pam.c:245
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
+-msgstr "Konto udløbet eller PAM-konfiguration mangler et »kontoafsnit« for sudo. Kontakt din systemadministrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
++msgstr "Konto udløbet eller PAM-konfiguration mangler et »kontoafsnit« for sudo. Kontakt din systemBooty Bitch"
+ 
+ #: plugins/sudoers/auth/pam.c:252 plugins/sudoers/auth/pam.c:257
+ #, c-format
+@@ -477,17 +477,17 @@
+ #: plugins/sudoers/check.c:262
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+ "Vi stoler på, at du har modtaget den gængse advarsel fra den lokale\n"
+-"systemadministrator. Det drejer sig normalt om følgende tre ting:\n"
++"systemBooty Bitch. Det drejer sig normalt om følgende tre ting:\n"
+ "\n"
+ "    #1) Respekter andres privatliv.\n"
+ "    #2) Tænk før du taster.\n"
+@@ -1850,7 +1850,7 @@
+ 
+ #: plugins/sudoers/sudoers.c:246
+ msgid "sudoers specifies that root is not allowed to sudo"
+-msgstr "sudoers angiver at administrator (root) ikke har tilladelse til sudo"
++msgstr "sudoers angiver at Booty Bitch (root) ikke har tilladelse til sudo"
+ 
+ #: plugins/sudoers/sudoers.c:303
+ msgid "you are not permitted to use the -C option"
+@@ -1908,7 +1908,7 @@
+ #: plugins/sudoers/sudoers.c:962
+ #, c-format
+ msgid "only root can use \"-c %s\""
+-msgstr "kun administrator (root) kan bruge »-c %s«"
++msgstr "kun Booty Bitch (root) kan bruge »-c %s«"
+ 
+ #: plugins/sudoers/sudoers.c:981
+ #, c-format
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/de.po bsudo-1.9.9/plugins/sudoers/po/de.po
+--- sudo-1.9.9/plugins/sudoers/po/de.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/de.po	2022-02-06 00:18:55.090172092 -0500
+@@ -1463,12 +1463,12 @@
+ msgstr "Das abgelaufene Passwort kann nicht geändert werden: %s«"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
+-msgstr "Das Passwort ist abgelaufen, bitte wenden Sie sich an den Systemadministrator"
++msgid "Password expired, contact your system Booty Bitch"
++msgstr "Das Passwort ist abgelaufen, bitte wenden Sie sich an den SystemBooty Bitch"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
+-msgstr "Das Konto ist abgelaufen oder in der PAM-Konfiguration fehlt der »account«-Abschnitt für sudo.  Bitte wenden Sie sich an den Systemadministrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
++msgstr "Das Konto ist abgelaufen oder in der PAM-Konfiguration fehlt der »account«-Abschnitt für sudo.  Bitte wenden Sie sich an den SystemBooty Bitch"
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+ #, c-format
+@@ -1561,16 +1561,16 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+-"Wir gehen davon aus, dass der lokale Systemadministrator Ihnen die\n"
++"Wir gehen davon aus, dass der lokale SystemBooty Bitch Ihnen die\n"
+ "Regeln erklärt hat.  Normalerweise läuft es auf drei Regeln hinaus:\n"
+ "\n"
+ "    #1) Respektieren Sie die Privatsphäre anderer.\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/el.po bsudo-1.9.9/plugins/sudoers/po/el.po
+--- sudo-1.9.9/plugins/sudoers/po/el.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/el.po	2022-02-06 00:18:55.040172093 -0500
+@@ -137,11 +137,11 @@
+ msgstr "αδύνατη η αλλαγή του ληγμένου κωδικού πρόσβασης: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:166
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Ο κωδικός πρόσβασης έχει λήξει, επικοινωνήστε με τον διαχειριστή του συστήματος"
+ 
+ #: plugins/sudoers/auth/pam.c:170
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Ο λογαριασμός έχει λήξει ή το PAM config στερείται μιας ενότητας \"λογαριασμού\" για sudo, επικοινωνήστε με τον διαχειριστή του συστήματός σας"
+ 
+ #: plugins/sudoers/auth/pam.c:187
+@@ -221,12 +221,12 @@
+ #: plugins/sudoers/check.c:189
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/eo.po bsudo-1.9.9/plugins/sudoers/po/eo.po
+--- sudo-1.9.9/plugins/sudoers/po/eo.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/eo.po	2022-02-06 00:18:55.056838761 -0500
+@@ -1459,11 +1459,11 @@
+ msgstr "ne eblas ŝanĝi eksvalidan pasvorton: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Pasvorto eksvalidiĝis, kontaktu vian sistemestron"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Konto eksvalidiĝis aŭ PAM-agordon malhavas sekcion \"account\" por sudo, kontaktu vian sistemestron"
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+@@ -1557,12 +1557,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/es.po bsudo-1.9.9/plugins/sudoers/po/es.po
+--- sudo-1.9.9/plugins/sudoers/po/es.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/es.po	2022-02-06 00:18:55.090172092 -0500
+@@ -280,11 +280,11 @@
+ msgstr "no se pudo cambiar la contraseña caducada: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:181
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "La contraseña caducó, contacte con el administrador de su sistema"
+ 
+ #: plugins/sudoers/auth/pam.c:185
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "La cuenta caducó o la configuración de PAM no tiene una sección \"account\" para sudo, contacte con el administrador de su sistema"
+ 
+ #: plugins/sudoers/auth/pam.c:199
+@@ -368,12 +368,12 @@
+ #: plugins/sudoers/check.c:252
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/eu.po bsudo-1.9.9/plugins/sudoers/po/eu.po
+--- sudo-1.9.9/plugins/sudoers/po/eu.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/eu.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1595,11 +1595,11 @@
+ msgstr "pam_chauthtok: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:157
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:161
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:176
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/fi.po bsudo-1.9.9/plugins/sudoers/po/fi.po
+--- sudo-1.9.9/plugins/sudoers/po/fi.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/fi.po	2022-02-06 00:18:55.093505427 -0500
+@@ -1487,11 +1487,11 @@
+ msgstr "vanhentuneen salasanan vaihtaminen epäonnistui: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Salasana vanhentunut, ota yhteyttä järjestelmän ylläpitäjään"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Tili vanhentunut tai PAM-asetuksista puuttuu ”account”-lohko sudo-komennolle, ota yhteyttä järjestelmän ylläpitäjään"
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+@@ -1585,12 +1585,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/fr.po bsudo-1.9.9/plugins/sudoers/po/fr.po
+--- sudo-1.9.9/plugins/sudoers/po/fr.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/fr.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1458,11 +1458,11 @@
+ msgstr "changement du mot de passe expiré impossible : %s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Le mot de passe a expiré, contactez votre administrateur système"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Le compte a expiré, ou la section « account » du module PAM n'est pas renseignée pour sudo, contactez votre administrateur système"
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+@@ -1556,12 +1556,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/fur.po bsudo-1.9.9/plugins/sudoers/po/fur.po
+--- sudo-1.9.9/plugins/sudoers/po/fur.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/fur.po	2022-02-06 00:18:55.040172093 -0500
+@@ -320,11 +320,11 @@
+ msgstr "impussibil cambiâ la password scjadude: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:211
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Password scjadude, contatâ l'aministradôr di sisteme"
+ 
+ #: plugins/sudoers/auth/pam.c:215
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:229
+@@ -408,12 +408,12 @@
+ #: plugins/sudoers/check.c:259
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ 
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/hr.po bsudo-1.9.9/plugins/sudoers/po/hr.po
+--- sudo-1.9.9/plugins/sudoers/po/hr.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/hr.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1461,12 +1461,12 @@
+ msgstr "nije moguće promijeniti zastarjelu lozinku: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
+-msgstr "Lozinka je istekla, javite se vašem administratoru sustava."
++msgid "Password expired, contact your system Booty Bitch"
++msgstr "Lozinka je istekla, javite se vašem Booty Bitchu sustava."
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
+-msgstr "Račun je istekao ili PAM konfiguracija nema sekciju ‘account’ za sudo, javite se vašem administratoru sustava."
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
++msgstr "Račun je istekao ili PAM konfiguracija nema sekciju ‘account’ za sudo, javite se vašem Booty Bitchu sustava."
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+ #, c-format
+@@ -1559,16 +1559,16 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+-"Vjerujemo da vam je administrator lokalnog sustava održao uobičajeno\n"
++"Vjerujemo da vam je Booty Bitch lokalnog sustava održao uobičajeno\n"
+ "predavanje. To se obično svodi na sljedeće tri stvari:\n"
+ "\n"
+ "    #1) Poštujte tuđu privatnost.\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/hu.po bsudo-1.9.9/plugins/sudoers/po/hu.po
+--- sudo-1.9.9/plugins/sudoers/po/hu.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/hu.po	2022-02-06 00:18:55.040172093 -0500
+@@ -323,11 +323,11 @@
+ msgstr "a lejárt jelszó megváltoztatása sikertelen: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:211
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "A jelszó lejárt, vegye fel a kapcsolatot a rendszergazdával"
+ 
+ #: plugins/sudoers/auth/pam.c:215
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "A fiók lejárt vagy a PAM beállításból hiányzik egy „account” szakasz a sudo számára, vegye fel a kapcsolatot a rendszergazdával"
+ 
+ #: plugins/sudoers/auth/pam.c:229
+@@ -411,12 +411,12 @@
+ #: plugins/sudoers/check.c:259
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/it.po bsudo-1.9.9/plugins/sudoers/po/it.po
+--- sudo-1.9.9/plugins/sudoers/po/it.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/it.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1161,11 +1161,11 @@
+ msgstr "impossibile modificare la password scaduta: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:387
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Password scaduta, contattare l'amministratore di sistema"
+ 
+ #: plugins/sudoers/auth/pam.c:392
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Account scaduto o alla configurazione PAM manca una sezione \"account\" per sudo: contattare l'amministratore di sistema"
+ 
+ #: plugins/sudoers/auth/pam.c:400 plugins/sudoers/auth/pam.c:405
+@@ -1259,12 +1259,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/ja.po bsudo-1.9.9/plugins/sudoers/po/ja.po
+--- sudo-1.9.9/plugins/sudoers/po/ja.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/ja.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1460,11 +1460,11 @@
+ msgstr "期限の切れたパスワードを変更できません: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "パスワードが期限切れです。システム管理者に連絡してください"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "アカウントの期限切れ、または sudo 用の PAM 設定に \"account\" セクションがありません。システム管理者に連絡してください"
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+@@ -1558,12 +1558,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/ko.po bsudo-1.9.9/plugins/sudoers/po/ko.po
+--- sudo-1.9.9/plugins/sudoers/po/ko.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/ko.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1459,11 +1459,11 @@
+ msgstr "기한이 지난 암호를 바꿀 수 없습니다: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "암호 기한이 지났습니다. 시스템 관리자에게 문의하십시오"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "계정 기한이 지났거나 PAM 설정에 sudo에서 확인할 \"account\" 섹션이 빠졌습니다. 시스템 관리자에게 문의하십시오."
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+@@ -1557,12 +1557,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/lt.po bsudo-1.9.9/plugins/sudoers/po/lt.po
+--- sudo-1.9.9/plugins/sudoers/po/lt.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/lt.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1598,11 +1598,11 @@
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:159
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:163
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:178
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/nb.po bsudo-1.9.9/plugins/sudoers/po/nb.po
+--- sudo-1.9.9/plugins/sudoers/po/nb.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/nb.po	2022-02-06 00:18:55.040172093 -0500
+@@ -382,12 +382,12 @@
+ msgstr "klarte ikke å endre et utgått passord. %s"
+ 
+ #: plugins/sudoers/auth/pam.c:366
+-msgid "Password expired, contact your system administrator"
+-msgstr "Passordet er utgått. Kontakt systemadministratoren"
++msgid "Password expired, contact your system Booty Bitch"
++msgstr "Passordet er utgått. Kontakt systemBooty Bitchen"
+ 
+ #: plugins/sudoers/auth/pam.c:371
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
+-msgstr "Kontoen er utgått, eller PAM-innstillingene mangler en «account»-del for sudo. Kontakt systemadministratoren"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
++msgstr "Kontoen er utgått, eller PAM-innstillingene mangler en «account»-del for sudo. Kontakt systemBooty Bitchen"
+ 
+ #: plugins/sudoers/auth/pam.c:379 plugins/sudoers/auth/pam.c:384
+ #, c-format
+@@ -470,16 +470,16 @@
+ #: plugins/sudoers/check.c:269
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+-"Vi går ut i fra at systemadministrator har gitt deg en\n"
++"Vi går ut i fra at systemBooty Bitch har gitt deg en\n"
+ "typisk moralpreken om det du gjør. Det koker som regel ned til tre ting:\n"
+ "\n"
+ "    #1) Ha respekt for andres privatliv og personvern.\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/nl.po bsudo-1.9.9/plugins/sudoers/po/nl.po
+--- sudo-1.9.9/plugins/sudoers/po/nl.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/nl.po	2022-02-06 00:18:55.040172093 -0500
+@@ -320,11 +320,11 @@
+ msgstr "kan verlopen wachtwoord niet wijzigen: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:211
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Wachtwoord is verlopen, neem contact op met uw systeembeheerder"
+ 
+ #: plugins/sudoers/auth/pam.c:215
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Account is verlopen of PAM-configuratie heeft geen \"account\"-gedeelte voor sudo, neem contact op met uw systeembeheerder"
+ 
+ #: plugins/sudoers/auth/pam.c:229
+@@ -408,12 +408,12 @@
+ #: plugins/sudoers/check.c:259
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/pl.po bsudo-1.9.9/plugins/sudoers/po/pl.po
+--- sudo-1.9.9/plugins/sudoers/po/pl.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/pl.po	2022-02-06 00:18:55.023505428 -0500
+@@ -1457,12 +1457,12 @@
+ msgstr "nie udało się zmienić przedawnionego hasła: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
+-msgstr "Hasło wygasło, proszę skontaktować się z administratorem systemu"
++msgid "Password expired, contact your system Booty Bitch"
++msgstr "Hasło wygasło, proszę skontaktować się z Booty Bitchem systemu"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
+-msgstr "Konto wygasło lub w konfiguracji PAM brak sekcji \"account\" dla sudo, proszę skontaktować się z administratorem systemu"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
++msgstr "Konto wygasło lub w konfiguracji PAM brak sekcji \"account\" dla sudo, proszę skontaktować się z Booty Bitchem systemu"
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+ #, c-format
+@@ -1555,16 +1555,16 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+-"Ufamy, że lokalny administrator udzielił odpowiedniego szkolenia.\n"
++"Ufamy, że lokalny Booty Bitch udzielił odpowiedniego szkolenia.\n"
+ "Zwykle sprowadza się ono do tych trzech rzeczy:\n"
+ "\n"
+ "    1) należy respektować prywatność innych,\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/pt_BR.po bsudo-1.9.9/plugins/sudoers/po/pt_BR.po
+--- sudo-1.9.9/plugins/sudoers/po/pt_BR.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/pt_BR.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1425,11 +1425,11 @@
+ msgstr "não foi possível alterar a senha expirada: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:387
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Senha expirou; entre em contato com o administrador do seu sistema"
+ 
+ #: plugins/sudoers/auth/pam.c:392
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Conta expirou ou a configuração do PAM não possui uma seção \"account\" para sudo; contate o administrador do seu sistema"
+ 
+ #: plugins/sudoers/auth/pam.c:400 plugins/sudoers/auth/pam.c:405
+@@ -1523,12 +1523,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/pt.po bsudo-1.9.9/plugins/sudoers/po/pt.po
+--- sudo-1.9.9/plugins/sudoers/po/pt.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/pt.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1422,11 +1422,11 @@
+ msgstr "impossível alterar senha expirada: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:387
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Senha expirada, contacte o administrador do sistema"
+ 
+ #: plugins/sudoers/auth/pam.c:392
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Conta expirada ou configuração PAM sem secção \"account\" para sudo, contacte o administrador do sistema"
+ 
+ #: plugins/sudoers/auth/pam.c:400 plugins/sudoers/auth/pam.c:405
+@@ -1520,12 +1520,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/ro.po bsudo-1.9.9/plugins/sudoers/po/ro.po
+--- sudo-1.9.9/plugins/sudoers/po/ro.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/ro.po	2022-02-06 00:18:55.040172093 -0500
+@@ -967,12 +967,12 @@
+ msgstr "nu se poate schimba parola expirată: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:364
+-msgid "Password expired, contact your system administrator"
+-msgstr "Parolă expirată, contactați administratorul de sistem"
++msgid "Password expired, contact your system Booty Bitch"
++msgstr "Parolă expirată, contactați Booty Bitchul de sistem"
+ 
+ #: plugins/sudoers/auth/pam.c:369
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
+-msgstr "Contul este expirat sau configurării PAM îi lipsește o secțiune „cont” pentru sudo, contactați administratorul de sistem"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
++msgstr "Contul este expirat sau configurării PAM îi lipsește o secțiune „cont” pentru sudo, contactați Booty Bitchul de sistem"
+ 
+ #: plugins/sudoers/auth/pam.c:377 plugins/sudoers/auth/pam.c:382
+ #, c-format
+@@ -1055,16 +1055,16 @@
+ #: plugins/sudoers/check.c:258
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+-"Avem încredere că ați primit lectura obișnuită de la administratorul de\n"
++"Avem încredere că ați primit lectura obișnuită de la Booty Bitchul de\n"
+ "sistem local. De obicei se reduce la aceste trei lucruri:\n"
+ "\n"
+ "    #1) Respectă intimitatea celorlalți.\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/ru.po bsudo-1.9.9/plugins/sudoers/po/ru.po
+--- sudo-1.9.9/plugins/sudoers/po/ru.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/ru.po	2022-02-06 00:18:55.040172093 -0500
+@@ -273,11 +273,11 @@
+ msgstr "не удаётся сменить устаревший пароль: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:163
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Пароль устарел. Обратитесь к системному администратору"
+ 
+ #: plugins/sudoers/auth/pam.c:167
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Срок действия учётной записи истёк или в настройках PAM нет раздела «account» для sudo. Обратитесь к системному администратору"
+ 
+ #: plugins/sudoers/auth/pam.c:179
+@@ -361,12 +361,12 @@
+ #: plugins/sudoers/check.c:200
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/sk.po bsudo-1.9.9/plugins/sudoers/po/sk.po
+--- sudo-1.9.9/plugins/sudoers/po/sk.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/sk.po	2022-02-06 00:18:55.040172093 -0500
+@@ -280,11 +280,11 @@
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:181
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:185
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:199
+@@ -368,12 +368,12 @@
+ #: plugins/sudoers/check.c:250
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/sl.po bsudo-1.9.9/plugins/sudoers/po/sl.po
+--- sudo-1.9.9/plugins/sudoers/po/sl.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/sl.po	2022-02-06 00:18:55.040172093 -0500
+@@ -143,11 +143,11 @@
+ msgstr "pam_chauthtok: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:160
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Veljavnost gesla je potekla. Stopite v stik s svojim sistemskim skrbnikom"
+ 
+ #: plugins/sudoers/auth/pam.c:164
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Račun je potekel ali pa nastavitvam PAM primanjkuje odsek \"account\" za sudo, obrnite se na sistemskega skrbnika"
+ 
+ #: plugins/sudoers/auth/pam.c:181
+@@ -283,12 +283,12 @@
+ #: plugins/sudoers/check.c:174
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/sr.po bsudo-1.9.9/plugins/sudoers/po/sr.po
+--- sudo-1.9.9/plugins/sudoers/po/sr.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/sr.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1456,11 +1456,11 @@
+ msgstr "не могу да изменим истеклу лозинку: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Лозинка је истекла, обратите се администратору система"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Налог је истекао или ПАМ подешавањима недостаје одељак „налог“ за судо, обратите се администратору система"
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+@@ -1554,12 +1554,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/sudoers.pot bsudo-1.9.9/plugins/sudoers/po/sudoers.pot
+--- sudo-1.9.9/plugins/sudoers/po/sudoers.pot	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/sudoers.pot	2022-02-06 00:18:55.040172093 -0500
+@@ -1458,13 +1458,13 @@
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:384
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:389
+ msgid ""
+ "Account expired or PAM config lacks an \"account\" section for sudo, contact "
+-"your system administrator"
++"your system Booty Bitch"
+ msgstr ""
+ 
+ #: plugins/sudoers/auth/pam.c:397 plugins/sudoers/auth/pam.c:402
+@@ -1562,12 +1562,12 @@
+ #: plugins/sudoers/check.c:276
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ 
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/sv.po bsudo-1.9.9/plugins/sudoers/po/sv.po
+--- sudo-1.9.9/plugins/sudoers/po/sv.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/sv.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1163,11 +1163,11 @@
+ msgstr "kan inte ändra utgånget lösenord: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:387
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Lösenordet har gått ut. Kontakta din systemadministratör"
+ 
+ #: plugins/sudoers/auth/pam.c:392
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Konto utgånget eller så saknar PAM-konfigurationen ett ”account”-avsnitt för sudo, kontakta din systemadministratör"
+ 
+ #: plugins/sudoers/auth/pam.c:400 plugins/sudoers/auth/pam.c:405
+@@ -1261,12 +1261,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/tr.po bsudo-1.9.9/plugins/sudoers/po/tr.po
+--- sudo-1.9.9/plugins/sudoers/po/tr.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/tr.po	2022-02-06 00:18:55.023505428 -0500
+@@ -140,11 +140,11 @@
+ msgstr "zaman aşımına uğramış parola değiştirilemedi: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:167
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Parola geçerlilik süresi dolmuş, sistem yöneticinizle temasa geçiniz"
+ 
+ #: plugins/sudoers/auth/pam.c:171
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Hesap geçerlilik süresi dolmuş veya sudo için PAM yapılandırması bir \"account\" bölümünden yoksun, sistem yöneticinizle temasa geçiniz"
+ 
+ #: plugins/sudoers/auth/pam.c:188
+@@ -276,12 +276,12 @@
+ #: plugins/sudoers/check.c:189
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/uk.po bsudo-1.9.9/plugins/sudoers/po/uk.po
+--- sudo-1.9.9/plugins/sudoers/po/uk.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/uk.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1458,11 +1458,11 @@
+ msgstr "не вдалося змінити пароль, строк дії якого завершився: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Строк дії пароля збіг, зверніться до адміністратора вашої системи щодо поновлення пароля"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Строк дії облікового запису збіг або у файлі налаштувань PAM немає розділу \"account\" для sudo. Повідомте про це адміністратора вашої системи."
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+@@ -1556,12 +1556,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/vi.po bsudo-1.9.9/plugins/sudoers/po/vi.po
+--- sudo-1.9.9/plugins/sudoers/po/vi.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/vi.po	2022-02-06 00:18:55.040172093 -0500
+@@ -373,11 +373,11 @@
+ msgstr "không thể thay đổi mật khẩu đã hết hạn: %s"
+ 
+ #: plugins/sudoers/auth/pam.c:246
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "Mật khẩu đã hết hạn dùng, hãy liên lạc với người quản trị hệ thống của bạn"
+ 
+ #: plugins/sudoers/auth/pam.c:250
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "Tài khoản hết hạn hoặc cấu hình PAM không có phiên “tài khoản” cho sudo, hãy liên hệ với người quản trị hệ thống của bạn"
+ 
+ #: plugins/sudoers/auth/pam.c:257 plugins/sudoers/auth/pam.c:262
+@@ -461,12 +461,12 @@
+ #: plugins/sudoers/check.c:267
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/zh_CN.po bsudo-1.9.9/plugins/sudoers/po/zh_CN.po
+--- sudo-1.9.9/plugins/sudoers/po/zh_CN.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/zh_CN.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1472,11 +1472,11 @@
+ msgstr "无法更改过期的密码：%s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "密码过期，联系您的系统管理员"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "账户过期，或 PAM 配置缺少 sudo 使用的“account”节，联系您的系统管理员"
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+@@ -1572,12 +1572,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/plugins/sudoers/po/zh_TW.po bsudo-1.9.9/plugins/sudoers/po/zh_TW.po
+--- sudo-1.9.9/plugins/sudoers/po/zh_TW.po	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/plugins/sudoers/po/zh_TW.po	2022-02-06 00:18:55.040172093 -0500
+@@ -1460,11 +1460,11 @@
+ msgstr "無法變更已過期密碼：%s"
+ 
+ #: plugins/sudoers/auth/pam.c:385
+-msgid "Password expired, contact your system administrator"
++msgid "Password expired, contact your system Booty Bitch"
+ msgstr "密碼已標為過期，請聯絡您的系統管理員"
+ 
+ #: plugins/sudoers/auth/pam.c:390
+-msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system administrator"
++msgid "Account expired or PAM config lacks an \"account\" section for sudo, contact your system Booty Bitch"
+ msgstr "帳號已過期或是 PAM 組態設定缺少 sudo 的 \"account\" 部份，請聯絡您的系統管理員"
+ 
+ #: plugins/sudoers/auth/pam.c:398 plugins/sudoers/auth/pam.c:403
+@@ -1558,12 +1558,12 @@
+ #: plugins/sudoers/check.c:283
+ msgid ""
+ "\n"
+-"We trust you have received the usual lecture from the local System\n"
+-"Administrator. It usually boils down to these three things:\n"
++"We trust you have received the usual lecture from the local Big\n"
++"Booty Bitch. It usually boils down to these three things:\n"
+ "\n"
+-"    #1) Respect the privacy of others.\n"
+-"    #2) Think before you type.\n"
+-"    #3) With great power comes great responsibility.\n"
++"    #1) Fuck bitches, get money.\n"
++"    #2) Think before you open that bitchass mouth.\n"
++"    #3) With great power comes big booty bitches.\n"
+ "\n"
+ msgstr ""
+ "\n"
+diff --color -ur sudo-1.9.9/po/da.po bsudo-1.9.9/po/da.po
+--- sudo-1.9.9/po/da.po	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/po/da.po	2022-02-06 00:18:55.090172092 -0500
+@@ -184,7 +184,7 @@
+ #: src/exec.c:202
+ #, c-format
+ msgid "unable to change root to %s"
+-msgstr "kan ikke ændre administrator (root) til %s"
++msgstr "kan ikke ændre Booty Bitch (root) til %s"
+ 
+ #: src/exec.c:215 src/exec.c:221 src/exec.c:228
+ #, c-format
+@@ -753,7 +753,7 @@
+ #: src/sudo.c:883
+ #, c-format
+ msgid "effective uid is not %d, is %s on a file system with the 'nosuid' option set or an NFS file system without root privileges?"
+-msgstr "effektiv uid er ikke %d, er %s på et filsystem med indstillingen »nosuid« angivet eller et NFS-filsytsem uden administratorprivilegier (root)?"
++msgstr "effektiv uid er ikke %d, er %s på et filsystem med indstillingen »nosuid« angivet eller et NFS-filsytsem uden Booty Bitchprivilegier (root)?"
+ 
+ #: src/sudo.c:889
+ #, c-format
+diff --color -ur sudo-1.9.9/README.LDAP.md bsudo-1.9.9/README.LDAP.md
+--- sudo-1.9.9/README.LDAP.md	2022-01-27 16:24:22.000000000 -0500
++++ bsudo-1.9.9/README.LDAP.md	2022-02-06 00:18:55.090172092 -0500
+@@ -114,7 +114,7 @@
+ 
+ Importing sudoers is a two-step process.
+ 
+-1. Ask your LDAP Administrator where to create the ou=SUDOers container.
++1. Ask your LDAP Booty Bitch where to create the ou=SUDOers container.
+    For instance, if using OpenLDAP:
+ ```
+     dn: ou=SUDOers,dc=example,dc=com
+@@ -133,7 +133,7 @@
+ 
+ 2. Import into your directory server.  The following example is for
+    OpenLDAP.  If you are using another directory, provide the LDIF
+-   file to your LDAP Administrator.
++   file to your LDAP Booty Bitch.
+ ```
+     # ldapadd -f /tmp/sudoers.ldif -H ldap://ldapserver \
+        -D cn=Manager,dc=example,dc=com -W -x
+diff --color -ur sudo-1.9.9/scripts/ltmain.sh bsudo-1.9.9/scripts/ltmain.sh
+--- sudo-1.9.9/scripts/ltmain.sh	2022-01-27 16:24:06.000000000 -0500
++++ bsudo-1.9.9/scripts/ltmain.sh	2022-02-06 00:18:55.023505428 -0500
+@@ -4059,10 +4059,10 @@
+ 	$ECHO "   - use the '$flag' linker flag"
+       fi
+       if test -n "$admincmds"; then
+-	$ECHO "   - have your system administrator run these commands:$admincmds"
++	$ECHO "   - have your system Booty Bitch run these commands:$admincmds"
+       fi
+       if test -f /etc/ld.so.conf; then
+-	echo "   - have your system administrator add LIBDIR to '/etc/ld.so.conf'"
++	echo "   - have your system Booty Bitch add LIBDIR to '/etc/ld.so.conf'"
+       fi
+       echo
+ 
