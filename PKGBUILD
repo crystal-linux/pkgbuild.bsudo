@@ -83,6 +83,7 @@ package() {
   install -Dm644 LICENSE.md -t "$pkgdir/usr/share/licenses/bsudo"
 
   echo "Defaults    insults" >> "$pkgdir/etc/sudoers"
+  echo "Defaults    pwfeedback" >> "$pkgdir/etc/sudoers"
 }
 
 # vim:set ts=2 sw=2 et:
