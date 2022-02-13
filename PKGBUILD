@@ -1,17 +1,15 @@
-
 # Arch Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Arch Contributor: Allan McRae <allan@archlinux.org>
 # Arch Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=bsudo
 _sudover=1.9.9
-pkgrel=4
+pkgrel=5
 pkgver=${_sudover/p/.p}
 pkgdesc="Give certain users the ability to run some commands as root"
 arch=('x86_64')
 url="https://www.sudo.ws/sudo/"
 license=('custom')
-groups=('base-devel')
 depends=('glibc' 'openssl' 'pam' 'libldap' 'zlib')
 conflicts=('sudo')
 backup=('etc/pam.d/sudo'
