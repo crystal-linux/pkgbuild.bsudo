@@ -4,7 +4,7 @@
 
 pkgname=bsudo
 _sudover=1.9.9
-pkgrel=5
+pkgrel=6
 pkgver=${_sudover/p/.p}
 pkgdesc="Give certain users the ability to run some commands as root"
 arch=('x86_64')
